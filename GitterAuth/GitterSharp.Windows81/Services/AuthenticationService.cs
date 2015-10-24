@@ -39,9 +39,9 @@ namespace GitterSharp.Services
             }
         }
 
-        public string RetrieveToken()
+        public Task<string> RetrieveTokenAsync()
         {
-            return _token;
+            return Task.FromResult(_token);
         }
 
         #endregion
