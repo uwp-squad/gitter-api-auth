@@ -18,7 +18,7 @@
 The authentication is divided in 2 steps that allow you to retrieve a Gitter token. These 2 steps can be found in a single service :
 
 ```
-public class AuthenticationService : IAuthenticationService
+public class AuthenticationService
 {
     public async Task<bool?> LoginAsync(string oauthKey, string oauthSecret)
     {

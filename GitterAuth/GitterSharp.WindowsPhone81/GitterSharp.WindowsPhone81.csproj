@@ -88,26 +88,6 @@
     <Compile Include="Services\AuthenticationService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="GitterSharp.Configuration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\gitter-api-pcl.0.3.5\lib\portable-win81+wpa81\GitterSharp.Configuration.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="GitterSharp.Helpers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\gitter-api-pcl.0.3.5\lib\portable-win81+wpa81\GitterSharp.Helpers.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="GitterSharp.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\gitter-api-pcl.0.3.5\lib\portable-win81+wpa81\GitterSharp.Model.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="GitterSharp.Services, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\gitter-api-pcl.0.3.5\lib\portable-win81+wpa81\GitterSharp.Services.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="GitterSharp.UniversalWindows, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\gitter-api-pcl.0.3.5\lib\portable-win81+wpa81\GitterSharp.UniversalWindows.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Extensions.dll</HintPath>
       <Private>True</Private>

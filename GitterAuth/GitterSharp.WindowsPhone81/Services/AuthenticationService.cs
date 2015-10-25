@@ -1,5 +1,4 @@
-﻿using GitterSharp.Configuration;
-using GitterSharp.Helpers;
+﻿using GitterSharp.Helpers;
 using System;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Activation;
@@ -10,7 +9,7 @@ namespace GitterSharp.Services
     /// <summary>
     /// Service used to finalize the authentication using Web Authentication Broker on Windows Phone 8.1
     /// </summary>
-    public class AuthenticationService : IAuthenticationService
+    public class AuthenticationService
     {
         #region Fields
 
@@ -29,9 +28,9 @@ namespace GitterSharp.Services
                 _oauthKey = oauthKey;
                 _oauthSecret = oauthSecret;
 
-                string startUrl = $"https://gitter.im/login/oauth/authorize?client_id={oauthKey}&response_type=code&redirect_uri={Constants.RedirectUrl}";
+                string startUrl = $"https://gitter.im/login/oauth/authorize?client_id={oauthKey}&response_type=code&redirect_uri={AuthHelper.RedirectUrl}";
                 var startUri = new Uri(startUrl);
-                var endUri = new Uri(Constants.RedirectUrl);
+                var endUri = new Uri(AuthHelper.RedirectUrl);
 
                 WebAuthenticationBroker.AuthenticateAndContinue(startUri, endUri, null, WebAuthenticationOptions.None);
 

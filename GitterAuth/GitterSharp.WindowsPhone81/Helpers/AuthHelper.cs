@@ -1,5 +1,4 @@
-﻿using GitterSharp.Configuration;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -12,6 +11,18 @@ namespace GitterSharp.Helpers
 {
     internal static class AuthHelper
     {
+        #region Properties
+
+        /// <summary>
+        /// Redirect URL when authenticate
+        /// </summary>
+        public static string RedirectUrl = "http://localhost";
+
+        #endregion
+
+
+        #region Methods
+
         public static async Task<string> RetrieveToken(WebAuthenticationResult result, string oauthKey, string oauthSecret)
         {
             if (result.ResponseStatus == WebAuthenticationStatus.Success)
@@ -51,7 +62,7 @@ namespace GitterSharp.Helpers
                     new KeyValuePair<string, string>("client_id", oauthKey),
                     new KeyValuePair<string, string>("client_secret", oauthSecret),
                     new KeyValuePair<string, string>("code", code),
-                    new KeyValuePair<string, string>("redirect_uri", Constants.RedirectUrl),
+                    new KeyValuePair<string, string>("redirect_uri", RedirectUrl),
                     new KeyValuePair<string, string>("grant_type", "authorization_code")
                 });
 
@@ -62,5 +73,7 @@ namespace GitterSharp.Helpers
                 return value.GetNamedString("access_token");
             }
         }
+
+        #endregion
     }
 }
