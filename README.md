@@ -15,7 +15,7 @@
 
 ## Authentication process
 
-The authentication is divided in 2 steps that allow you to retrieve a Gitter token. All of these can be found in a single service :
+The authentication is divided in 2 steps that allow you to retrieve a Gitter token. These 2 steps can be found in a single service :
 
 ```
 public class AuthenticationService : IAuthenticationService
@@ -38,23 +38,24 @@ public class AuthenticationService : IAuthenticationService
 Task<bool?> LoginAsync(string oauthKey, string oauthSecret);
 ```
 
-To complete...
+On Windows 8.1 / 10 and Windows Phone 8.1, the login process use a service called *WebAuthenticationBroker* through OAuth2. This method requires your **OauthKey** and your **OauthSecret**. You can retrieve these parameters from the developer website : [https://developer.gitter.im/docs/authentication](https://developer.gitter.im/docs/authentication).
 
 ### Step 2 - Retrieve token
 
 #### Windows 8.1 / Windows 10
 
 ```
-Task<string> RetrieveTokenAsync()
+Task<string> RetrieveTokenAsync();
 ```
 
-To complete...
+On Windows 8.1 / 10, once you're authenticated (cf. step 1), you only have to retrieve the provided token as it is.
 
 #### Windows Phone 8.1
 
 ```
-Task<string> RetrieveTokenAsync(WebAuthenticationBrokerContinuationEventArgs args)
+Task<string> RetrieveTokenAsync(WebAuthenticationBrokerContinuationEventArgs args);
 ```
 
-To complete...
+On Windows Phone 8.1, it is a little different, you have to pass a parameter : **WebAuthenticationBrokerContinuationEventArgs**. This event result comes from the continuation service of the *WebAuthenticationBroker*.
 
+Here is an example of how to implement OAuth2 authentication using *WebAuthenticationBroker* on Universal Apps (W8.1 / WP8.1) : [https://code.msdn.microsoft.com/windowsapps/Authentication-using-bb28840e#content](https://code.msdn.microsoft.com/windowsapps/Authentication-using-bb28840e#content).
