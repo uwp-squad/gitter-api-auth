@@ -19,6 +19,11 @@ namespace GitterSharp.Services
 
         #region Methods
 
+        /// <summary>
+        /// Execute login process through OAuth2 authentication mechanism
+        /// (https://developer.gitter.im/docs/authentication)
+        /// </summary>
+        /// <returns>true: login success / false: login failed / null: exception occured</returns>
         public async Task<bool?> LoginAsync(string oauthKey, string oauthSecret)
         {
             try
@@ -38,6 +43,10 @@ namespace GitterSharp.Services
             }
         }
 
+        /// <summary>
+        /// Retrieve token to use Gitter Api methods that requires a connected user
+        /// </summary>
+        /// <returns>The token</returns>
         public Task<string> RetrieveTokenAsync()
         {
             return Task.FromResult(_token);
