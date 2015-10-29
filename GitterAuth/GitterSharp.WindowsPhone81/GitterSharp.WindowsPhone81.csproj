@@ -83,6 +83,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\ApiAuthException.cs" />
+    <Compile Include="Helpers\AuthHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AuthenticationService.cs" />
   </ItemGroup>
@@ -95,12 +97,6 @@
       <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Primitives.dll</HintPath>
       <Private>True</Private>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GitterSharp.Helpers\GitterSharp.Helpers.csproj">
-      <Project>{e7499206-becf-4be3-97e8-c5c607d7c586}</Project>
-      <Name>GitterSharp.Helpers</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

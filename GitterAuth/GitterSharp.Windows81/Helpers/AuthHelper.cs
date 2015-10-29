@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GitterSharp.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -32,11 +33,11 @@ namespace GitterSharp.Helpers
             }
             if (result.ResponseStatus == WebAuthenticationStatus.ErrorHttp)
             {
-                throw new Exception("Error http");
+                throw new ApiAuthException(WebAuthenticationStatus.ErrorHttp);
             }
             if (result.ResponseStatus == WebAuthenticationStatus.UserCancel)
             {
-                throw new Exception("User Canceled");
+                throw new ApiAuthException(WebAuthenticationStatus.UserCancel);
             }
 
             return null;
