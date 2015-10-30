@@ -105,10 +105,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exceptions\ApiAuthException.cs" />
-    <Compile Include="Helpers\AuthHelper.cs" />
+    <Compile Include="..\GitterSharp.WindowsPhone81\Exceptions\ApiAuthException.cs">
+      <Link>Exceptions\ApiAuthException.cs</Link>
+    </Compile>
+    <Compile Include="..\GitterSharp.WindowsPhone81\Helpers\AuthHelper.cs">
+      <Link>Helpers\AuthHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\GitterSharp.WindowsPhone81\Services\AuthenticationService.cs">
+      <Link>Services\AuthenticationService.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\AuthenticationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
