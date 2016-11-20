@@ -1,7 +1,9 @@
 ﻿using GitterSharp.Helpers;
 using System;
 using System.Threading.Tasks;
+#if WINDOWS_PHONE_APP || WINDOWS_APP
 using Windows.Security.Authentication.Web;
+#endif
 #if WINDOWS_PHONE_APP
 using Windows.ApplicationModel.Activation;
 #endif

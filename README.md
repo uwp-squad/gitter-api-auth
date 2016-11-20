@@ -8,7 +8,7 @@
 * Windows 8.1 (Store Apps)
 * Windows Phone 8.1
 * Windows 10
-* .NET Framework 4.5 [planned]
+* .NET Framework 4.5
 * Xamarin.Android [planned]
 * Xamarin.iOS [planned]
 
@@ -34,6 +34,16 @@ public class AuthenticationService
 
 ### Step 1 - Execute login
 
+#### .NET Framework
+
+```
+string Login(string oauthKey, string oauthSecret);
+```
+
+Using .NET Framework, we load a browser window and once we get a result we automatically call to generate a token.
+
+#### Windows 8.1 / Windows 10
+
 ```
 Task<bool?> LoginAsync(string oauthKey, string oauthSecret);
 ```
@@ -41,6 +51,27 @@ Task<bool?> LoginAsync(string oauthKey, string oauthSecret);
 On Windows 8.1 / 10 and Windows Phone 8.1, the login process use a service called *WebAuthenticationBroker* through OAuth2. This method requires your **OauthKey** and your **OauthSecret**. You can retrieve these parameters from the developer website : [https://developer.gitter.im/docs/authentication](https://developer.gitter.im/docs/authentication).
 
 ### Step 2 - Retrieve token
+
+#### .NET Framework
+
+For example, using a C# console application : 
+
+```
+private static string _oauthKey = "<key>";
+private static string _oauthSecret = "<secret>";
+
+[STAThread]
+static void Main(string[] args)
+{
+    var authenticationService = new AuthenticationService();
+    string token = authenticationService.Login(_oauthKey, _oauthSecret);
+
+    // Now you can use the token with the Gitter Api
+
+    Console.WriteLine("Press any key to exit.");
+    Console.ReadKey();
+}
+```
 
 #### Windows 8.1 / Windows 10
 
