@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>gitter-api-auth</id>
-        <version>0.2.0</version>
+        <version>0.2.1</version>
         <title>Gitter# Auth</title>
         <authors>David Bottiau</authors>
         <owners>David Bottiau</owners>
@@ -10,7 +10,7 @@
         <iconUrl>https://avatars0.githubusercontent.com/u/5990364</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Gitter# Auth provide you a way to authenticate user on Gitter API</description>
-        <releaseNotes>Rename namespace to prevent conflicts with gitter-api-pcl</releaseNotes>
+        <releaseNotes>Delete browser cache when requesting token on .NET framework</releaseNotes>
         <copyright>Copyright 2015</copyright>
         <tags>Gitter Api Auth</tags>
         <dependencies>
