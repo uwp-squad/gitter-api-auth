@@ -9,8 +9,8 @@
     <ProjectGuid>{1F22AEE3-19FE-4F38-B07B-B01E5220F54D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GitterSharp.Windows81</RootNamespace>
-    <AssemblyName>GitterSharp.Windows81</AssemblyName>
+    <RootNamespace>GitterAuth.Windows81</RootNamespace>
+    <AssemblyName>GitterAuth.Windows81</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
@@ -105,13 +105,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\GitterSharp.WindowsPhone81\Exceptions\ApiAuthException.cs">
+    <Compile Include="..\GitterAuth.WindowsPhone81\Exceptions\ApiAuthException.cs">
       <Link>Exceptions\ApiAuthException.cs</Link>
     </Compile>
-    <Compile Include="..\GitterSharp.WindowsPhone81\Helpers\AuthHelper.cs">
+    <Compile Include="..\GitterAuth.WindowsPhone81\Helpers\AuthHelper.cs">
       <Link>Helpers\AuthHelper.cs</Link>
     </Compile>
-    <Compile Include="..\GitterSharp.WindowsPhone81\Services\AuthenticationService.cs">
+    <Compile Include="..\GitterAuth.WindowsPhone81\Services\AuthenticationService.cs">
       <Link>Services\AuthenticationService.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

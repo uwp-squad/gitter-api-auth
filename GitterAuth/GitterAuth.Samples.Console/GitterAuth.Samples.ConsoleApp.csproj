@@ -7,8 +7,8 @@
     <ProjectGuid>{AAEEB414-A595-45BA-A890-A2918AF70CDF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GitterSharp.Samples.ConsoleApp</RootNamespace>
-    <AssemblyName>GitterSharp.Samples.ConsoleApp</AssemblyName>
+    <RootNamespace>GitterAuth.Samples.ConsoleApp</RootNamespace>
+    <AssemblyName>GitterAuth.Samples.ConsoleApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GitterSharp.NetFramework\GitterSharp.NetFramework.csproj">
+    <ProjectReference Include="..\GitterAuth.NetFramework\GitterAuth.NetFramework.csproj">
       <Project>{b54b0575-7f31-40aa-9514-23647c80a43f}</Project>
-      <Name>GitterSharp.NetFramework</Name>
+      <Name>GitterAuth.NetFramework</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

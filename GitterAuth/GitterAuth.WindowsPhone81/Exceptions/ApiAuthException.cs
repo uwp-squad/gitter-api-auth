@@ -1,7 +1,7 @@
 ﻿using System;
 using Windows.Security.Authentication.Web;
 
-namespace GitterSharp.Exceptions
+namespace GitterAuth.Exceptions
 {
     /// <summary>
     /// Api Auth Exception designed using octokit.net example

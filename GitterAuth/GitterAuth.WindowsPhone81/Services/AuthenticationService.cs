@@ -1,4 +1,4 @@
-﻿using GitterSharp.Helpers;
+﻿using GitterAuth.Helpers;
 using System;
 using System.Threading.Tasks;
 #if WINDOWS_PHONE_APP || WINDOWS_APP
@@ -8,7 +8,7 @@ using Windows.Security.Authentication.Web;
 using Windows.ApplicationModel.Activation;
 #endif
 
-namespace GitterSharp.Services
+namespace GitterAuth.Services
 {
     /// <summary>
     /// Service used to finalize the authentication using Web Authentication Broker on Windows (Phone) 8.1

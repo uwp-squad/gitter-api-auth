@@ -1,4 +1,4 @@
-﻿using GitterSharp.Exceptions;
+﻿using GitterAuth.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Windows.Data.Json;
 using Windows.Security.Authentication.Web;
 
-namespace GitterSharp.Helpers
+namespace GitterAuth.Helpers
 {
     internal static class AuthHelper
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GitterSharp.Exceptions
+namespace GitterAuth.Exceptions
 {
     /// <summary>
     /// Api Auth Exception designed using octokit.net example

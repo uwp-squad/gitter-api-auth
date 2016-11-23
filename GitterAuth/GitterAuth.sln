@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitterSharp.Windows81", "GitterSharp.Windows81\GitterSharp.Windows81.csproj", "{1F22AEE3-19FE-4F38-B07B-B01E5220F54D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitterAuth.Windows81", "GitterAuth.Windows81\GitterAuth.Windows81.csproj", "{1F22AEE3-19FE-4F38-B07B-B01E5220F54D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitterSharp.WindowsPhone81", "GitterSharp.WindowsPhone81\GitterSharp.WindowsPhone81.csproj", "{EF4C6179-1271-4E02-AFC8-6CBBDC7BB9F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitterAuth.WindowsPhone81", "GitterAuth.WindowsPhone81\GitterAuth.WindowsPhone81.csproj", "{EF4C6179-1271-4E02-AFC8-6CBBDC7BB9F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front", "Front", "{ECEBD870-4D4C-4053-982A-F915E7D92DC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitterSharp.NetFramework", "GitterSharp.NetFramework\GitterSharp.NetFramework.csproj", "{B54B0575-7F31-40AA-9514-23647C80A43F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitterAuth.NetFramework", "GitterAuth.NetFramework\GitterAuth.NetFramework.csproj", "{B54B0575-7F31-40AA-9514-23647C80A43F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{E9452249-AC5A-4CCE-A021-6CCFE6D0F757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitterSharp.Samples.ConsoleApp", "GitterSharp.Samples.Console\GitterSharp.Samples.ConsoleApp.csproj", "{AAEEB414-A595-45BA-A890-A2918AF70CDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitterAuth.Samples.ConsoleApp", "GitterAuth.Samples.Console\GitterAuth.Samples.ConsoleApp.csproj", "{AAEEB414-A595-45BA-A890-A2918AF70CDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

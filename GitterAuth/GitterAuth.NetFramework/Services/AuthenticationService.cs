@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GitterSharp.Helpers;
+using GitterAuth.Helpers;
 using System.Windows.Forms;
-using GitterSharp.Controls;
+using GitterAuth.Controls;
 
-namespace GitterSharp.Services
+namespace GitterAuth.Services
 {
     /// <summary>
     /// Service used to finalize the authentication

@@ -7,8 +7,8 @@
     <ProjectGuid>{B54B0575-7F31-40AA-9514-23647C80A43F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GitterSharp.NetFramework</RootNamespace>
-    <AssemblyName>GitterSharp.NetFramework</AssemblyName>
+    <RootNamespace>GitterAuth.NetFramework</RootNamespace>
+    <AssemblyName>GitterAuth.NetFramework</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using GitterSharp.Services;
+using GitterAuth.Services;
 
-namespace GitterSharp.Samples.ConsoleApp
+namespace GitterAuth.Samples.ConsoleApp
 {
     public class Program
     {

@@ -1,4 +1,4 @@
-﻿using GitterSharp.Helpers;
+﻿using GitterAuth.Helpers;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GitterSharp.Controls
+namespace GitterAuth.Controls
 {
     internal class BrowserWindow : Form
     {

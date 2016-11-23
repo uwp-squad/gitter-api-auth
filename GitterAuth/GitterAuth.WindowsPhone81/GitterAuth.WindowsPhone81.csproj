@@ -9,8 +9,8 @@
     <ProjectGuid>{EF4C6179-1271-4E02-AFC8-6CBBDC7BB9F3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GitterSharp.WindowsPhone81</RootNamespace>
-    <AssemblyName>GitterSharp.WindowsPhone81</AssemblyName>
+    <RootNamespace>GitterAuth.WindowsPhone81</RootNamespace>
+    <AssemblyName>GitterAuth.WindowsPhone81</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
